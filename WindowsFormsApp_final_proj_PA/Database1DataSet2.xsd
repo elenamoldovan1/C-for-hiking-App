@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Database1DataSet2" targetNamespace="http://tempuri.org/Database1DataSet2.xsd" xmlns:mstns="http://tempuri.org/Database1DataSet2.xsd" xmlns="http://tempuri.org/Database1DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Database1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Database1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp_final_proj_PA.Properties.Settings.GlobalReference.Default.Database1ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Rez2TableAdapter" GeneratorDataComponentClassName="Rez2TableAdapter" Name="Rez2" UserDataComponentName="Rez2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Database1ConnectionString (Settings)" DbObjectName="dbo.Rez2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IdRez, Nume_Prenume, Tip, Denumire_Traseu, Pret FROM dbo.Rez2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IdRez" DataSetColumn="IdRez" />
+              <Mapping SourceColumn="Nume_Prenume" DataSetColumn="Nume_Prenume" />
+              <Mapping SourceColumn="Tip" DataSetColumn="Tip" />
+              <Mapping SourceColumn="Denumire_Traseu" DataSetColumn="Denumire_Traseu" />
+              <Mapping SourceColumn="Pret" DataSetColumn="Pret" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Database1DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Database1DataSet2" msprop:Generator_DataSetName="Database1DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Rez2" msprop:Generator_RowEvHandlerName="Rez2RowChangeEventHandler" msprop:Generator_RowDeletedName="Rez2RowDeleted" msprop:Generator_RowDeletingName="Rez2RowDeleting" msprop:Generator_RowEvArgName="Rez2RowChangeEvent" msprop:Generator_TablePropName="Rez2" msprop:Generator_RowChangedName="Rez2RowChanged" msprop:Generator_RowChangingName="Rez2RowChanging" msprop:Generator_TableClassName="Rez2DataTable" msprop:Generator_RowClassName="Rez2Row" msprop:Generator_TableVarName="tableRez2" msprop:Generator_UserTableName="Rez2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdRez" msprop:Generator_ColumnPropNameInRow="IdRez" msprop:Generator_ColumnPropNameInTable="IdRezColumn" msprop:Generator_ColumnVarNameInTable="columnIdRez" msprop:Generator_UserColumnName="IdRez" type="xs:int" />
+              <xs:element name="Nume_Prenume" msprop:Generator_ColumnPropNameInRow="Nume_Prenume" msprop:Generator_ColumnPropNameInTable="Nume_PrenumeColumn" msprop:Generator_ColumnVarNameInTable="columnNume_Prenume" msprop:Generator_UserColumnName="Nume_Prenume">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tip" msprop:Generator_ColumnPropNameInRow="Tip" msprop:Generator_ColumnPropNameInTable="TipColumn" msprop:Generator_ColumnVarNameInTable="columnTip" msprop:Generator_UserColumnName="Tip">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Denumire_Traseu" msprop:Generator_ColumnPropNameInRow="Denumire_Traseu" msprop:Generator_ColumnPropNameInTable="Denumire_TraseuColumn" msprop:Generator_ColumnVarNameInTable="columnDenumire_Traseu" msprop:Generator_UserColumnName="Denumire_Traseu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pret" msprop:Generator_ColumnPropNameInRow="Pret" msprop:Generator_ColumnPropNameInTable="PretColumn" msprop:Generator_ColumnVarNameInTable="columnPret" msprop:Generator_UserColumnName="Pret">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Rez2" />
+      <xs:field xpath="mstns:IdRez" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
